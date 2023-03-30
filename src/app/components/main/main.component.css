@@ -1,0 +1,42 @@
+.content {
+  max-width: 1024px;
+  width: 100%;
+  margin: 30px auto;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.content:before {
+  position: absolute;
+  content: '';
+  bottom: -30px;
+  left: 0;
+  margin-bottom: 80px;
+  height: 1px;
+  width: 100%;
+  background-color: #888eca;
+}
+
+.list {
+  max-width: 1024px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 15px;
+  margin: 80px auto;
+}
+
+.resource-list {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 50px;
+}
+
+.resource-list__btn {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 70px;
+  box-shadow: 10px 10px 30px #192ac6, -10px -10px 30px #6ac2ff;
+  cursor: pointer;
+}

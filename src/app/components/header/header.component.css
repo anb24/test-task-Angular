@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  min-height: 70px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 5px auto;
+  filter: drop-shadow(0px 10px 10px black);
+}
+
+.header__title {
+  margin: 0 35px;
+  font-size: 50px;
+  text-align: end;
+  color: #fff;
+  text-shadow: 10px 10px 30px #00119f, -10px -10px 30px #6ac2ff;
+  letter-spacing: 3px;
+  cursor: default;
+}
+
+.header__btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 30px;
+  width: 70px;
+  box-shadow: 10px 10px 30px #192ac6, -10px -10px 30px #6ac2ff;
+  cursor: pointer;
+}
