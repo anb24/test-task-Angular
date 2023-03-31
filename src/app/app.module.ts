@@ -9,7 +9,6 @@ import {MainComponent} from "./components/main/main.component";
 import {ElementComponent} from "./components/element/element.component";
 import {ElementResComponent} from "./components/element-res/element-res.component";
 
-
 @NgModule({
   declarations: [
     AppComponent,
