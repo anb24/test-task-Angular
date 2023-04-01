@@ -1,0 +1,6 @@
+<div class="container">
+  <app-resource
+    *ngFor="let resource of resources$ | async"
+    [resource]="resource">
+  </app-resource>
+</div>

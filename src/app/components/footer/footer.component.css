@@ -19,3 +19,8 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.footer__text:hover {
+  color: #192ac6;
+  transition: 5s;
+}

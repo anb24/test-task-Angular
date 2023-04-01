@@ -1,7 +1,8 @@
 .content {
-  max-width: 1024px;
+  display: grid;
+  max-width: 1600px;
   width: 100%;
-  margin: 30px auto;
+  margin: 0 auto 60px;
   flex: 1 0 auto;
   position: relative;
 }
@@ -9,21 +10,22 @@
 .content:before {
   position: absolute;
   content: '';
-  bottom: -30px;
+  bottom: -110px;
   left: 0;
   margin-bottom: 80px;
   height: 1px;
   width: 100%;
-  background-color: #888eca;
+  background-color: cornflowerblue;
 }
 
 .list {
-  max-width: 1024px;
-  display: grid;
+  max-width: 1600px;
+  display: inline-grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px 15px;
-  margin: 80px auto;
+  gap: 20px 20px;
+  margin: auto;
+  padding: 0;
 }
 
 .resource-list {

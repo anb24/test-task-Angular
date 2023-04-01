@@ -1,0 +1,13 @@
+<li class="element">
+  <a class="element__box" [routerLink]="['/user', user.id.toString()]">
+    <div class="element__group">
+      <img class="element__image" [src]="user.avatar" [alt]="user.first_name"/>
+      <p class="element__title">{{ getFullName() }}</p>
+    </div>
+    <p class="element__email">{{ user.email }}</p>
+  </a>
+  <button class="element__delete" (click)="deleteItem()" [disabled]="deleting">
+    <i *ngIf="!deleting">Удалить</i>
+    <i *ngIf="deleting" >отлетает..</i>
+  </button>
+</li>

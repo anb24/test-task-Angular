@@ -1,0 +1,15 @@
+.resource {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #888eca;
+}
+
+.resource__data {
+  color: #261349;
+  margin: 0;
+}

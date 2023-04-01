@@ -1,0 +1,9 @@
+<div class="user">
+  <img class="user__avatar" [src]="user.avatar" [alt]="getFullName()"/>
+  <div class="user__box">
+    <h1 class="user__name">{{ getFullName() }}</h1>
+    <p class="user__email">{{ user.email }}</p>
+    <p class="user__id">ID_{{ user.id }}</p>
+    <button class="user__edit-btn" (click)="showEditDialog = true">Редактировать</button>
+  </div>
+</div>

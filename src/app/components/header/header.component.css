@@ -18,14 +18,32 @@
   color: #fff;
   text-shadow: 10px 10px 30px #00119f, -10px -10px 30px #6ac2ff;
   letter-spacing: 3px;
-  cursor: default;
+  cursor: pointer;
 }
 
 .header__btn {
+  background-color: #2f5aa9;
+  border-radius: 10px;
+  border: none;
   margin-top: 10px;
   margin-right: 10px;
   height: 30px;
   width: 70px;
-  box-shadow: 10px 10px 30px #192ac6, -10px -10px 30px #6ac2ff;
+  box-shadow: 5px 5px 15px #192ac6, -5px -5px 15px #6ac2ff;
   cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header__title:hover {
+  color: #192ac6;
+  transition: 5s;
+}
+
+.header__btn:hover {
+  filter: brightness(140%);
+  transition: all .6s;
 }

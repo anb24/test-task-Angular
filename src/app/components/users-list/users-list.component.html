@@ -1,0 +1,8 @@
+<main class="content">
+  <ul class="list">
+    <app-user-list-item
+      *ngFor="let user of users | async"
+      [user]="user">
+    </app-user-list-item>
+  </ul>
+</main>

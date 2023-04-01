@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+  text-decoration: none;
+  color: cornflowerblue;
+  cursor: default;
+  font-size: 35px;
+  margin: 35px auto 15px;
+}
+
+.title__link {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.title__link:hover {
+  color: #192ac6;
+  transition: .5s;
+}
+
+.resources {
+  display: grid;
+  justify-content: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: auto;
+}
