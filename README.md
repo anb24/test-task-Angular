@@ -45,3 +45,9 @@ npm start
 3) Улучшить валидацию
 4) Убрать излишнюю вложенность
 5) ...
+
+
+
+
+
+![Image alt](https://github.com/anb24/test-task-Angular/blob/main/Screenshot_1.jpg)
