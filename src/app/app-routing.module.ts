@@ -4,9 +4,9 @@ import { UserPageComponent } from 'src/app/pages/user-page/user-page.component';
 import { UsersPageComponent } from 'src/app/pages/users-page/users-page.component';
 
 const routes: Routes = [
-  {path: 'users', component: UsersPageComponent, title: 'Главная страница' },
+  { path: 'users', component: UsersPageComponent, title: 'Главная страница' },
   { path: 'user/:id', component: UserPageComponent },
-  { path: '', redirectTo: '/users', pathMatch: 'full' },
+  // { path: '', redirectTo: '/users', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -6,4 +6,4 @@ export type UserData = {
   last_name: string
 };
 
-export type EditUserData = Omit<UserData, 'id' | 'avatar'>;
+// export type EditUserData = Omit<UserData, 'id' | 'avatar'>;

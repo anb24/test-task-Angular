@@ -9,6 +9,10 @@ import { ReqresService } from '../../utils/reqres.api';
 export class UsersListComponent implements OnInit {
   constructor(private _reqresService: ReqresService) {}
 
+  deleteUserWithId(id: number) {
+    this._reqresService.deleteUser(id);
+  }
+
   get users() {
     return this._reqresService.users;
   }

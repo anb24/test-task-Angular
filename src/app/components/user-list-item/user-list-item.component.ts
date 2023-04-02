@@ -19,5 +19,6 @@ export class UserListItemComponent {
 
   deleteItem() {
     this.deleting = true;
+    this.onDelete.emit(this.user.id);
   }
 }

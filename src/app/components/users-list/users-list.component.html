@@ -2,7 +2,8 @@
   <ul class="list">
     <app-user-list-item
       *ngFor="let user of users | async"
-      [user]="user">
+      [user]="user"
+      (onDelete)="deleteUserWithId($event)">
     </app-user-list-item>
   </ul>
 </main>
