@@ -74,3 +74,10 @@
   filter: brightness(140%);
   transition: all .6s;
 }
+
+@media (max-width: 370px){
+  .user__avatar {
+    height: 300px;
+    width: 300px;
+  }
+}

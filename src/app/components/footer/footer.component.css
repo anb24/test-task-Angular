@@ -24,3 +24,9 @@
   color: #192ac6;
   transition: 5s;
 }
+
+@media (max-width: 365px){
+  .footer__text {
+    font-size: 15px;
+  }
+}

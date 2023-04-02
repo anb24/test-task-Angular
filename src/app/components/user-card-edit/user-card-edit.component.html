@@ -1,0 +1,55 @@
+<form class="popup__form" [formGroup]="form" (ngSubmit)="submit()">
+  <label class="popup-edit__label">
+    <input
+      class="popup__text"
+      [ngClass]="{
+        'user-edit__input_error': firstNameHasError
+      }"
+      type="text"
+      formControlName="first_name"
+      placeholder="Имя"
+      minlength="1"
+      maxlength="25"
+      autocomplete="off"
+      required
+    />
+    <p class="popup__error" *ngIf="firstNameHasRequiredError">Необходимо заполнить...</p>
+    <p class="popup__error" *ngIf="firstNameHasCapitalizeError">Начните с заглавной буквы</p>
+  </label>
+  <label class="popup-edit__label">
+    <input
+      class="popup__text"
+      [ngClass]="{
+        'user-edit__input_error': lastNameHasError
+      }"
+      type="text"
+      formControlName="last_name"
+      placeholder="Фамилия"
+      minlength="3"
+      maxlength="50"
+      autocomplete="off"
+      required
+    />
+    <p class="popup__error" *ngIf="lastNameHasRequiredError">Необходимо заполнить...</p>
+    <p class="popup__error" *ngIf="lastNameHasCapitalizeError">Начните с заглавной буквы</p>
+  </label>
+  <label class="popup-edit__label">
+    <input
+      class="popup__text"
+      [ngClass]="{
+        'user-edit__input_error': emailHasError
+      }"
+      type="text"
+      formControlName="email"
+      placeholder="e-mail"
+      autocomplete="off"
+      required
+    />
+    <p *ngIf="emailHasRequiredError" class="popup__error">Необходимо заполнить...</p>
+    <p *ngIf="emailHasEmailError" class="popup__error">Некорректный e-mail</p>
+  </label>
+  <button class="popup__save-btn" type="submit" [disabled]="updating">
+    <ng-container *ngIf="!updating">Сохранить</ng-container>
+    <i *ngIf="updating">Сохраняю..</i>
+  </button>
+</form>

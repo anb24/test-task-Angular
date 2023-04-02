@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ReqresService } from '../../utils/reqres.api';
 
 @Component({
-  selector: 'app-users-list',
+  selector: 'app-users',
   templateUrl: './users-list.component.html',
   styleUrls: ['./users-list.component.css']
 })

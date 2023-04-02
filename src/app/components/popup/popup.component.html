@@ -1,0 +1,6 @@
+<div class="popup popup_type_edit" (click)="close($event)">
+  <div class="popup__container" role="dialog" (click)="$event.stopPropagation()">
+    <h2 class="popup__title" >{{ title }}</h2>
+    <ng-content></ng-content>
+  </div>
+</div>

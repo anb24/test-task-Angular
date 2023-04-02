@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { UserData } from '../models/user';
+import { UserData, EditUserData } from '../models/user';
 import { ResourceData } from "../models/resource";
 import { map } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs';
@@ -8,13 +8,15 @@ import { BehaviorSubject } from 'rxjs';
 type ReqresResponse<item> = {
   data?: item;
 };
+type UpdateResponse<item> = item & {
+  updateAt: string;
+};
 
 @Injectable({
   providedIn: 'root',
 })
 export class ReqresService {
   constructor(private _client: HttpClient) {}
-
   public users = new BehaviorSubject<UserData[]>([]);
 
   getUsers() {
@@ -41,6 +43,23 @@ export class ReqresService {
         this.users.value.splice(idx, 1);
       }
     });
+  }
+
+  updateUser(id: number, newUserData: EditUserData) {
+    const request = this._client.put<UpdateResponse<EditUserData>>(
+      `https://reqres.in/api/users/${id}`,
+      newUserData
+    );
+    request.subscribe(() => {
+      const idx = this.users.value.findIndex(({ id: userId }) => userId === id);
+      if (idx >= 0) {
+        this.users.value[idx] = {
+          ...this.users.value[idx],
+          ...newUserData,
+        };
+      }
+    });
+    return request;
   }
 
   getResources() {

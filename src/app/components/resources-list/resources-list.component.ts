@@ -4,7 +4,7 @@ import { ReqresService } from '../../utils/reqres.api';
 import { ResourceData } from '../../models/resource';
 
 @Component({
-  selector: 'app-resources-list',
+  selector: 'app-resources',
   templateUrl: './resources-list.component.html',
   styleUrls: ['./resources-list.component.css']
 })

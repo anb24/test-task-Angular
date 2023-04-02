@@ -7,3 +7,14 @@
     <button class="user__edit-btn" (click)="showEditDialog = true">Редактировать</button>
   </div>
 </div>
+
+<app-popup
+  *ngIf="showEditDialog"
+  (close)="showEditDialog = false"
+  title="Редактировать профиль"
+>
+  <app-user-edit
+    [user]="user"
+    (userUpdate)="updateUser($event)"
+  ></app-user-edit>
+</app-popup>

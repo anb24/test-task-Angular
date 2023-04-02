@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 import { switchMap } from 'rxjs';
 import { ReqresService } from '../../utils/reqres.api';
 import { UserData } from '../../models/user';
-import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-user-page',
@@ -11,7 +12,6 @@ import { Title } from '@angular/platform-browser';
 })
 export class UserPageComponent implements OnInit {
   public user?: UserData;
-
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,

@@ -1,0 +1,65 @@
+.popup__form {
+  margin-top: 24px;
+  border: none;
+  padding: 0;
+}
+
+.popup__text {
+  width: 100%;
+  max-width: 358px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 30px;
+  padding: 0;
+  padding-bottom: 3px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  color: #261349;
+}
+.popup__text:focus-visible {
+  outline-color: lightslategray;
+  outline-width: 1px;
+  outline-style: solid;
+}
+
+.popup__error {
+  color: #FF0000;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  display: block;
+  height: 15px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.popup__save-btn {
+  margin-top: 48px;
+  width: 358px;
+  height: 50px;
+  color: #FFFFFF;
+  background-color: cornflowerblue;
+  box-shadow: 5px 5px 15px #192ac6, -5px -5px 15px #6ac2ff;
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.popup__save-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 440px){
+  .popup__save-btn {
+    width: 300px;
+  }
+}

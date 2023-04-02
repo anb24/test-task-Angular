@@ -24,3 +24,9 @@
   width: 100%;
   margin: auto;
 }
+
+@media (max-width: 400px){
+  .title {
+    font-size: 25px;
+  }
+}

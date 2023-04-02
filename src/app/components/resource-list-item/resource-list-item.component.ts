@@ -3,10 +3,10 @@ import { ResourceData } from '../../models/resource';
 
 @Component({
   selector: 'app-resource',
-  templateUrl: './resource.component.html',
-  styleUrls: ['./resourse.component.css']
+  templateUrl: './resource-list-item.component.html',
+  styleUrls: ['./resource-list-item.component.css']
 })
-export class ResourceComponent {
+export class ResourceListItemComponent {
   @Input() resource!: ResourceData;
 
   public hover = false;

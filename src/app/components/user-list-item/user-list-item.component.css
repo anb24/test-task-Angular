@@ -81,3 +81,10 @@
   transform: scale(1.05);
   transition: all .2s;
 }
+
+@media (max-width: 400px){
+  .element:hover {
+    transform: scale(0.95);
+    transition: all .2s;
+  }
+}
